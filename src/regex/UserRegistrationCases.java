@@ -12,4 +12,10 @@ public class UserRegistrationCases {
         String regex = "^[A-Z][a-z]{2,}$";
         System.out.println(firstName + " = " + firstName.matches(regex));
     }
+
+    public void enterLastName() {
+        System.out.println("Enter the Last name starts with Cap and has minimum 3 characters");
+        String lastName = scanner.next();
+        System.out.println(Pattern.matches("^[A-Z]{1}[a-z]{2,}$", lastName));
+    }
 }
